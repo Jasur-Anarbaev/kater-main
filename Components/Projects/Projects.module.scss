@@ -1,0 +1,232 @@
+.Projects {
+    padding-top: 150px;
+}
+
+
+.project__title {
+    font-family: 'Prompt', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 64px;
+    color: #000000;
+
+    b {
+        color: #2a96cd;
+    }
+}
+
+.project__describe {
+    max-width: 877px;
+    font-family: 'Prompt', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #636363;
+
+}
+
+.project__name {
+    margin-top: 40px;
+    font-family: 'Prompt', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #636363;
+}
+
+.close__project {
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.project__describe {
+    margin-top: 16px;
+    font-family: 'Prompt', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #636363;
+}
+
+
+
+.project__data {
+    margin-top: 157px;
+}
+
+.projects__box {
+    margin-top: 106px;
+    display: flex;
+    gap: 36px;
+    flex-wrap: wrap;
+}
+
+.project__hide_active{
+    animation: anit 0.8s ease-in-out;
+}
+
+.project__box__inside {
+    padding: 41px 49px 35px 48px;
+}
+
+@keyframes anit {
+    to{
+        transform: scale(1);
+    }
+
+    from{
+        transform: scale(0.8);
+    }
+}
+.otzyv__avito {
+    margin-top: 37px;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.otzyv__imgs {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.project__image {
+    position: relative;
+
+    .img img {
+        width: 313px;
+        height: 439px;
+        border: 1px solid #91BAED;
+        border-radius: 125px;
+    }
+}
+
+.otzyv {
+    cursor: pointer;
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    padding: 26px 27px;
+    background: #F9FBFE;
+    border: 1px solid #2A96CD;
+    box-shadow: -4px 6px 36px rgba(0, 0, 0, 0.08);
+    border-radius: 40px;
+    font-family: 'Prompt', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #2A96CD;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    transition: 0.3s ease-in-out;
+
+    svg path {
+        fill: #2A96CD;
+        transition: 0.3s ease-in-out;
+    }
+}
+
+.otzyv:hover {
+    transform: scale(1.08);
+    background-color: #2A96CD;
+    color: #FFFFFF;
+}
+
+.otzyv:hover svg path {
+    fill: #ffff;
+
+}
+
+.project__box {
+    width: 454px;
+    height: 648px;
+    background: #FFFFFF;
+    border: 0.5px solid #A6B5CA;
+}
+
+
+@media(max-width:730px){
+    .project__image {
+    
+        .img img {
+            width: 283px;
+            height: 389px;
+        }
+    }
+
+    .project__box__inside {
+        padding: 21px 29px 15px 28px;
+    }
+
+    .project__box {
+        width: 354px;
+        height: 548px;
+    }
+
+    .project__data{
+        margin-top: 20px;
+    }
+
+    .otzyv{
+        gap: 6px;
+        font-size: 20px;
+        padding: 18px 19px;
+
+        svg{
+            width: 30px;
+        }
+    }
+    
+}
+
+
+@media(max-width:440px){
+
+    .project__box__inside{
+        padding: 11px 19px 5px 18px;
+    }
+
+    .project__box {
+        width: 354px;
+        height: 520px;
+    }
+
+    .otzyv__avito{
+        margin-top: 15px;
+        gap: 15px;
+    }
+
+    .project__describe{
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .project__name{
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+}
+
+
+@media(max-width:400px){
+
+    .project__image{
+        .img img{
+width: 250px;
+height: 350px;
+        }
+    }
+
+
+
+}
